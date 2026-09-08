@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    background-color: rebeccapurple;
+    height: 70px;
+    color: white;
+}
+.menu>li>a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,68 @@
+.login-outer{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+}
+
+.login-card{
+    height: 400px;
+    width: 500px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+.login-card>h1{
+    color: white;
+    font-weight: bolder;
+}
+
+.login-card label{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.login-card input{
+    width: 80%;
+    padding: 20px 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+.login-card .forgot{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+    text-align: right;
+    
+}
+.login-card .forgot a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-card>button{
+    width: 55%;
+    padding: 15px 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+}
