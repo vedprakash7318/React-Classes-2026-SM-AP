@@ -6,15 +6,75 @@
 .dashboardLayout-outer{
     height: 100vh;
     width: 100%;
-    background-color: gray;
     overflow: hidden;
     display: flex;
+    color: white;
 }
 
 .dashboardLayout-sidebar{
     height: 100vh;
     width: 280px;
-    background-color: antiquewhite;
+    background-color: #0F172A;
+}
+
+.sidebar-top{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+.sidebar-menu{
+    height: 70%;
+    width: 100%;
+    
+}
+.sidebar-menu>ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.sidebar-menu>ul>li{
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: green;
+}
+.sidebar-menu>ul>li>.navLink{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sidebar-bottom{
+    height: 90px;
+    width: 100%;
+    background-color: #D34B13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-bottom button{
+    padding: 15px 60px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .dashboardLayout-main{
     flex: 1;
@@ -22,15 +82,56 @@
     /* width: 100%; */
 }
 .dashboardLayout-header{
-    height: 70px;
-    box-shadow: 0px 0px 20px rgba(186, 184, 184, 0.8);
+    height: 50px;
+    box-shadow: 10px 10px 20px rgba(116, 114, 114, 0.8);
     /* width: 100%; */
-    background-color: white;
+    background-color:#FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
 }
+.header-first{ 
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar-close-btn{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(215, 214, 214);
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dashboardLayoutAdmin{
+    height: 100%;
+    width: 150px;
+    background-color: rgb(215, 214, 214);
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
 .dashboardLayout-content{
     overflow-y: auto;
     height: calc(100vh - 70px);
-    background-color: aqua;
     padding: 20px;
     text-align: justify;
+    background-color: #ccd4dc;
+    color: #0F172A;
 }

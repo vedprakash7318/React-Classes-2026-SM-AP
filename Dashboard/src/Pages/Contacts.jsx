@@ -1,8 +1,10 @@
 import React from 'react'
-
+import DashboardLayout from '../Components/DashboardLayout'
 const Contacts = () => {
   return (
-    <div>Contacts</div>
+   <DashboardLayout>
+     <div>Contacts</div>
+   </DashboardLayout>
   )
 }
 
