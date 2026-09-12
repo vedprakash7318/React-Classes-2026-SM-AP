@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardOuter{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+.card-image{
+    height: 300px;
+    width: 400px;
+    background-color: gray;
+}
+.card-image>img{
+    height: 100%;
+    width: 100%;
+}
+.card-price{
+    height: 100px;
+    width: 400px;
+    background-color: antiquewhite;
+}

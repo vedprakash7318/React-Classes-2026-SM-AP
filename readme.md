@@ -38,4 +38,24 @@ react-router-dom
             NavLink
             useNavigate
     
-Props
+Props:- 
+
+    Child 
+    Parent
+
+
+    <MyButton>
+        
+    </MyButton>
+
+
+
+Hooks :-  extra plugin 
+
+useState
+useEffect
+useRef
+useMemo
+useCallback
+custom Hook
+useContext

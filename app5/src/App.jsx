@@ -1,24 +1,14 @@
-import React, { useState } from 'react'
-import MyButton from './Components/MyButton'
+import React from 'react'
+import MyCard from './Components/MyCard'
 
 const App = () => {
-   function hanldeClick(){
-    alert("Hello")
-  }
-
-  function hanldeClick1(){
-    alert("Hello1")
-  }
-
-  function hanldeClick2(){
-    alert("Hello2")
-  }
+  let data =[
+    {id:1,price:20,image:"/images/1.jpg"},
+    {id:2,price:40,image:"/images/1.jpg"},
+  ]
   return (
     <>
-        <h1>App Page </h1>
-        <MyButton text="click"  ved={hanldeClick}/> <br /> <br />
-        <MyButton text="click1" ved={hanldeClick1}/>
-        <MyButton text="click2" ved={hanldeClick2}/>
+      <MyCard data = {data}/>
     </>
   )
 }

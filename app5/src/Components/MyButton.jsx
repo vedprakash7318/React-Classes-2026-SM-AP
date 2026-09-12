@@ -1,10 +1,11 @@
 import React from 'react'
 
-const MyButton = ({ved,text}) => {
-   
+const MyButton = (props) => {
+    console.log(props);
+    
   return (
     <>
-        <button onClick={ved}>{text}</button>
+        <h1>Name:- {props.data}</h1>
     
     </>
   )

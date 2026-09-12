@@ -1,0 +1,22 @@
+.category-card-outer{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+}
+
+.category-card-image{
+    background-color: green;
+    height: 250px;
+    width: 200px;
+}
+.category-card-image>img{
+    height: 100%; 
+    width: 100%;
+}
+.category-card-text{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

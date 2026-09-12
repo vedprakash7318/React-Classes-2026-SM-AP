@@ -1,0 +1,17 @@
+.slider-outer{
+    width: 100%;
+}
+.slider-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.category-card-home-outer{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
