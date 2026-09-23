@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboardLayout-container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background-color: red;
+}
+.sidebar-close{
+    width: 80px !important;
+}
+.dashboardLayout-main{
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+    overflow-x: hidden;
+}
+.dashboardLayout-header{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.dashboardLayout-header>button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.dashboardLayout-content{
+    width: 100%;
+    background-color: aquamarine;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
