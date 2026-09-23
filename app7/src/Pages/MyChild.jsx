@@ -1,6 +1,7 @@
 import React from 'react'
 
-const MyChild = ({handleClick}) => {
+const MyChild = React.memo(
+  ({handleClick}) => {
     console.log("Child Rendered")
   return (
     <>
@@ -8,4 +9,5 @@ const MyChild = ({handleClick}) => {
     </>
   )
 }
+)
 export default MyChild

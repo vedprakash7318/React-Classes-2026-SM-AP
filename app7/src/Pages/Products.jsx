@@ -7,7 +7,9 @@ const Products = () => {
         const data = await res.json()
         console.log(data);
     }
-    handleFetch()
+    useEffect(()=>{
+      handleFetch()
+    },[])
   return (
     <>
         {count} <br /> <br />

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import MyChild from './MyChild'
 const MyCallBack = () => {
   const [count,setCount] = useState(0)
-  const demo=()=>{
+  const demo=useCallback(()=>{
     console.log("demo called")
-  }
+  },[])
   return (
    <>
     <h1>count:- {count}</h1> <br /> <br />
