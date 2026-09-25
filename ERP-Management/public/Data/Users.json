@@ -4,7 +4,7 @@
     "name":"Ved Prakash",
     "email":"ved@gmail.com",
     "otp":"1234",
-    "role":"Admin",
+    "role":"supperAdmin",
     "token":"asdfghjklqwertyui1234567@#$%^&*"
     },
     {
@@ -12,7 +12,7 @@
     "name":"Satya Prakash",
     "email":"s@gmail.com",
     "otp":"5678",
-    "role":"School",
+    "role":"admin",
     "token":"asdfghjklqwertyndgvfjyevcjsrfgsh54678dschjvsdcv6ui@#$%^&*"
 
     }

@@ -25,8 +25,6 @@ const Login = () => {
 
   const sendOtp = async () => {
     let existingUser = user.find((u) => u?.email == email)
-    console.log(existingUser);
-
     if (email == existingUser?.email) {
       setStep(2)
     } else {
@@ -37,9 +35,10 @@ const Login = () => {
 
   const verifyOtp = () => {
     let existingUser = user.find((u) => u?.email == email)
-    console.log(existingUser.otp);
+    console.log(existingUser.role);
     if (existingUser.otp == otp) {
       localStorage.setItem("token", existingUser.token)
+      localStorage.setItem("role", existingUser.role)
       toast.success('✅ Login Successfully');
       navigate('/dashboard')
     } else {
