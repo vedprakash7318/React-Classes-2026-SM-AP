@@ -24,31 +24,29 @@ const DashboardLayout = () => {
 
   const tabs = {
     supperAdmin: [
-      { title: "Dashboard", path: "/dashboard", icon: "IoSettings" },
-      { title: "Admins", path: "/admins", icon: "RiAdminFill" }
+      { title: "Dashboard", path: "/dashboard", icon: IoSettings },
+      { title: "Admins", path: "/admins", icon: RiAdminFill }
     ],
     admin: [
-      { title: "Dashboard", path: "/dashboard", icon: "MdDashboard", },
-      { title: "Fee", path: "/fee", icon: "FaRupeeSign", },
-      { title: "Teachers", path: "/teachers", icon: "LiaChalkboardTeacherSolid", },
-      { title: "Students", path: "/Students", icon: "PiStudentBold", },
-      { title: "Class", path: "/class", icon: "SiGoogleclassroom", },
-      { title: "Subject", path: "/subjects", icon: "MdSubject", },
-      { title: "Settings", path: "/settings", icon: "IoSettings", },
+      { title: "Dashboard", path: "/dashboard", icon: MdDashboard, },
+      { title: "Fee", path: "/fee", icon: FaRupeeSign, },
+      { title: "Teachers", path: "/teachers", icon: LiaChalkboardTeacherSolid, },
+      { title: "Students", path: "/Students", icon: PiStudentBold, },
+      { title: "Class", path: "/class", icon: SiGoogleclassroom, },
+      { title: "Subject", path: "/subjects", icon: MdSubject, },
+      { title: "Settings", path: "/settings", icon: IoSettings, },
     ],
     teacher: [
-      { title: "Dashboard", path: "/dashboard", icon: "MdDashboard", },
-      { title: "Fee", path: "/fee", icon: "FaRupeeSign", },
-      { title: "Students", path: "/Students", icon: "PiStudentBold", },
-      { title: "My Classes", path: "/myclass", icon: "SiGoogleclassroom", },
-      { title: "My Subjects", path: "/my-subjects", icon: "MdSubject", },
-      { title: "Profile", path: "/profile", icon: "VscAccount ", },
+      { title: "Dashboard", path: "/dashboard", icon: MdDashboard, },
+      { title: "Fee", path: "/fee", icon: FaRupeeSign, },
+      { title: "Students", path: "/Students", icon: PiStudentBold, },
+      { title: "My Classes", path: "/myclass", icon: SiGoogleclassroom, },
+      { title: "My Subjects", path: "/my-subjects", icon: MdSubject, },
+      { title: "Profile", path: "/profile", icon: VscAccount, },
     ]
   }
 
   const roleTabs = tabs[role] || [];
-  console.log(roleTabs);
-
   return (
     <>
       <div className="dashboardLayout-container">
