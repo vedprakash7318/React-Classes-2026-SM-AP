@@ -1,0 +1,34 @@
+.all-classes-header{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(170, 162, 162, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-create-class{
+    background-color:#0B3D78;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-header>button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 20px;
+}

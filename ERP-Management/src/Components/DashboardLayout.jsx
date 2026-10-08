@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './CSS/dashboardLayout.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { MdDashboard } from "react-icons/md";
 import { FaRupeeSign } from "react-icons/fa";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
@@ -10,9 +10,13 @@ import { SiGoogleclassroom } from "react-icons/si";
 import { IoSettings } from "react-icons/io5";
 import { RiAdminFill } from "react-icons/ri";
 import { VscAccount } from "react-icons/vsc";
-const DashboardLayout = () => {
+
+const DashboardLayout = ({children}) => {
+
   const [role, setRole] = useState('')
   const [isClose, setIsClose] = useState(false)
+  const navigate = useNavigate()
+
   const handleSidebar = () => {
     setIsClose(!isClose)
   }
@@ -29,12 +33,13 @@ const DashboardLayout = () => {
     ],
     admin: [
       { title: "Dashboard", path: "/dashboard", icon: MdDashboard, },
+      { title: "Registration", path: "/registration", icon: FaRupeeSign, },
       { title: "Fee", path: "/fee", icon: FaRupeeSign, },
       { title: "Teachers", path: "/teachers", icon: LiaChalkboardTeacherSolid, },
-      { title: "Students", path: "/Students", icon: PiStudentBold, },
+      { title: "Students", path: "/students", icon: PiStudentBold, },
       { title: "Class", path: "/class", icon: SiGoogleclassroom, },
       { title: "Subject", path: "/subjects", icon: MdSubject, },
-      { title: "Settings", path: "/settings", icon: IoSettings, },
+      { title: "Settings", path: "/admin-settings", icon: IoSettings, },
     ],
     teacher: [
       { title: "Dashboard", path: "/dashboard", icon: MdDashboard, },
@@ -47,6 +52,15 @@ const DashboardLayout = () => {
   }
 
   const roleTabs = tabs[role] || [];
+
+
+const handleLogout = ()=>{
+  localStorage.removeItem('token')
+  localStorage.removeItem('role')
+  navigate('/login')
+}
+
+
   return (
     <>
       <div className="dashboardLayout-container">
@@ -79,7 +93,7 @@ const DashboardLayout = () => {
 
           </div>
           <div className="logout-outer">
-            <button className='sidebar-logout'>Logout</button>
+            <button className='sidebar-logout' onClick={handleLogout}>Logout</button>
           </div>
         </div>
         <div className="dashboardLayout-main">
@@ -88,7 +102,7 @@ const DashboardLayout = () => {
             <h1>Welcome Back! {role} </h1>
           </div>
           <div className="dashboardLayout-content">
-
+              {children}
           </div>
         </div>
       </div>

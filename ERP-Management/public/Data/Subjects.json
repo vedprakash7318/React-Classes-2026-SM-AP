@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 1,
+    "name": "Mathematics"
+  },
+  {
+    "_id": 2,
+    "name": "Science"
+  },
+  {
+    "_id": 3,
+    "name": "English"
+  },
+  {
+    "_id": 4,
+    "name": "Hindi"
+  },
+  {
+    "_id": 5,
+    "name": "Social Studies"
+  },
+  {
+    "_id": 6,
+    "name": "Computer Science"
+  },
+  {
+    "_id": 7,
+    "name": "Physics"
+  },
+  {
+    "_id": 8,
+    "name": "Chemistry"
+  },
+  {
+    "_id": 9,
+    "name": "Biology"
+  },
+  {
+    "_id": 10,
+    "name": "Geography"
+  }
+]

@@ -1,0 +1,39 @@
+.subject-body>input{
+    width: 75%;
+    padding: 10px;
+    border: 2px solid;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.subject-body>button{
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: 2px solid;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    background-color: #0B3D78;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.subject-table{
+    width: 90%;
+    margin: 80px auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid;
+}
+
+.subject-edit-btn{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #0B3D78;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
