@@ -32,3 +32,9 @@
     cursor: pointer;
     padding: 20px;
 }
+
+.all-classes-table{
+    width: 90%;
+    margin: 20px;
+    text-align: center;
+}

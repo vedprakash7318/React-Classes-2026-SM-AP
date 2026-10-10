@@ -70,3 +70,35 @@ Fixed Data :-
     }
 
 
+
+
+
+
+
+Admission
+
+
+Student Name
+Mobile Number  WhatsApp Number
+Email
+fName
+MName  op
+DOB
+Gender
+Category  op
+Address Pin Code
+Photo op
+Adhar Number  op
+
+
+Pro
+
+Admission Date auto
+Admission Class   by this auto fetch subject fee and details
+Last School Name 
+last School Class 
+last School number
+Session auto
+
+
+
