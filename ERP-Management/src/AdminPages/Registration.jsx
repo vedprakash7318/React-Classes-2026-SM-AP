@@ -4,7 +4,14 @@ import './CSS/Registration.css'
 import axios from 'axios'
 const Registration = () => {
   const [classDetails,setClassDetails] = useState([])
+  const [selectedClass,setSelectedClass] = useState("")
 
+  let selectedFee = classDetails.find((t)=>{
+    return t.Class === selectedClass
+  })
+
+  const totalFee = selectedFee?.fee?.reduce((acc,f)=>acc+f.Amount,0)  
+  
   const fetchClassDetails = async()=>{
     try {
       const res = await axios.get('/Data/classdetails.json')
@@ -77,6 +84,32 @@ const Registration = () => {
 
               <h2>Other Information</h2>
               <label>Class</label>
+              <select name="class" onChange={(e)=>setSelectedClass(e.target.value)} value={selectedClass}>
+                <option value="">Select Class</option>
+                {
+                  classDetails.map((c)=>(
+                    <option key={c._id} value={c.Class}>{c.Class}</option>
+                  ))
+                }
+              </select>
+
+            <h2>Fee Information</h2>
+                
+                {
+                  selectedFee?.fee.map((f)=>(
+                    <div key={f._id}>
+                      <label> {f.FeeType}</label>
+                      <span> {f.Amount}</span>
+                      <span> {f.PaymentType}</span>
+                    </div>
+                  ))
+                }
+
+                <h3>{totalFee || 0}</h3>
+
+
+
+              
               
 
 
