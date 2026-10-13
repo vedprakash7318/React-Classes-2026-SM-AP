@@ -11,7 +11,7 @@ const Registration = () => {
   })
 
   const totalFee = selectedFee?.fee?.reduce((acc,f)=>acc+f.Amount,0)  
-  
+
   const fetchClassDetails = async()=>{
     try {
       const res = await axios.get('/Data/classdetails.json')
@@ -21,16 +21,24 @@ const Registration = () => {
       
     }
   }
+
+
+  const generateRegistration = ()=>{
+    console.log("RNS-" + Math.floor(100000 + Math.random()*900000));
+    console.log("RNS-001");
+    
+  }
   useEffect(()=>{
     fetchClassDetails()
+    generateRegistration()
   },[])
   return (
     <>
       <DashboardLayout>
           <div>Add Students</div>
           <div className="registation-info">
-            <span>Registration Date</span>
-            <span>{Date.now()}</span>
+            <span>Registration Date </span>
+            <span>{new Date().toISOString().split('T')[0]}</span> <br /> <br />
             <span>Registration Number</span>
             <span>Auto</span>
             <span>Session</span>
@@ -113,7 +121,7 @@ const Registration = () => {
               
 
 
-
+                <button>Submit</button>
 
 
 

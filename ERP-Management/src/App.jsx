@@ -9,6 +9,7 @@ import Fee from './AdminPages/Fee'
 import Registration from './AdminPages/Registration'
 import AdminSettings from './AdminPages/AdminSettings'
 import AllClasses from './AdminPages/AllClasses'
+import Students from './AdminPages/Students'
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path='/fee' element={<Fee />} />
           <Route path='/registration' element={<Registration />} />
           <Route path='/class' element={<AllClasses />} />
+          <Route path='/students' element={<Students />} />
           <Route path='/admin-settings' element={<AdminSettings />} />
 
       {/* Admin Routes  end*/}
