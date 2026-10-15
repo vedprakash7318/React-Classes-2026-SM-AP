@@ -6,16 +6,12 @@ import { Table } from 'react-bootstrap'
 
 const Fee = () => {
   const [students, setStudents] = useState([])
-  const [search, setSearch] = useState('')
   const [searchedStudent, setSearchedStudent] = useState(null)
-  const [dueFee, setDueFee] = useState('')
-  const [remark, setRemark] = useState('')
-  const [paidAmount, setPaidAmount] = useState('')
-  const [error, setError] = useState('')
-  const [success, setSuccess] = useState('')
-  const [allfee,setAllFee] = useState([])
-  const [searchedfee,setSearchedFee] = useState(null)
-
+  const [search, setSearch] = useState('')
+  const [allfee, setAllFee] = useState([])
+  const [searchedfee, setSearchedFee] = useState(null)
+  const [duePay, setduePay] = useState("")
+  const[dueFee,setDueFee] = useState("")
 
   const fetchStudents = async () => {
     try {
@@ -23,19 +19,21 @@ const Fee = () => {
       setStudents(res.data)
     } catch (error) {
       console.error('Error fetching students:', error)
-      setError('Unable to load student data.')
+
     }
   }
 
 
-  const fetechFee = async()=>{
-      try {
-        const res = await axios.get('/Data/fee.json')
-        setAllFee(res.data)
-      } catch (error) {
-        console.log(error);
-        
-      }
+  const fetechFee = async () => {
+    try {
+      const res = await axios.get('/Data/fee.json')
+      setAllFee(res.data)
+      console.log(res.data);
+
+    } catch (error) {
+      console.log(error);
+
+    }
   }
 
   useEffect(() => {
@@ -45,37 +43,72 @@ const Fee = () => {
 
   const handleSearch = (e) => {
     e.preventDefault()
-    setError('')
-    setSuccess('')
-
     const query = search.trim().toLowerCase()
 
     if (!query) {
       setSearchedStudent(null)
-      setError('Please enter Phone, Email or Registration Number.')
+
       return
     }
+
+
 
     const student = students.find((student) =>
       [student.PhoneNumber, student.Email, student.RegNo].some(
         (value) => String(value ?? '').toLowerCase() === query
       )
     )
+    if (student) {
+      setSearchedStudent(student)
 
-    const fee = allfee.filter((f)=>{
+    } else {
+      setSearchedStudent(null)
+
+    }
+
+    const fee = allfee.filter((f) => {
       return f.RegNo === student?.RegNo
     })
     setSearchedFee(fee);
-        
 
-    if (student) {
-      setSearchedStudent(student)
-     
-    } else {
-      setSearchedStudent(null)
-      setError('Student not found. Please check the entered details.')
-    }
+
+
   }
+
+  const handleSetPay = (f) => {
+    setduePay(f)
+    setDueFee(String(Number(f.Amount)-Number(f.paidAmount)))
+  }
+
+
+
+  const collectfee = ()=>{
+    const option = {
+      key:"rzp_test_6kz5nGEzi8uXRw",
+      amount: Number(dueFee) * 100,
+      currency:'INR',
+      name:"ERP-PORTAL",
+      description:"Fee Payment",
+      image:"/images/logo-erp.png",
+      handler:function(response){
+        alert("Payment Successful");
+      },
+      modal:{
+        ondismiss:function(r){  
+          console.log(r);
+          alert("Payment Cancelled");
+        }
+      },
+      theme:{
+        color:"#33cc94"
+      }
+    }
+    const rzpay = new window.Razorpay(option);
+    rzpay.open();
+  }
+
+
+
 
 
 
@@ -87,6 +120,9 @@ const Fee = () => {
     .map((word) => word[0])
     .join('')
     .toUpperCase()
+
+
+
 
   return (
     <DashboardLayout>
@@ -124,19 +160,8 @@ const Fee = () => {
           </button>
         </form>
 
-        {error && (
-          <div className="collect-fee-alert collect-fee-alert-error" role="alert">
-            {error}
-          </div>
-        )}
 
-        {success && (
-          <div className="collect-fee-alert collect-fee-alert-success" role="status">
-            {success}
-          </div>
-        )}
-
-        {!searchedStudent && !error && (
+        {!searchedStudent && (
           <div className="collect-fee-empty-state">
             <div className="collect-fee-empty-icon">⌕</div>
             <h2>Find a Student</h2>
@@ -191,7 +216,7 @@ const Fee = () => {
                   <strong>{searchedStudent.FatherName || 'N/A'}</strong>
                 </div>
 
-               
+
 
                 <div className="collect-fee-info-item">
                   <span>Phone Number</span>
@@ -213,7 +238,7 @@ const Fee = () => {
 
 
             <div className='fee-table'>
-              <Table style={{textAlign:"center"}}>
+              <Table style={{ textAlign: "center" }}>
                 <thead>
                   <tr>
                     <th>Reg No</th>
@@ -221,19 +246,21 @@ const Fee = () => {
                     <th>Fee Type</th>
                     <th>Paid Amount</th>
                     <th>Due Amount</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
 
 
                 <tbody>
                   {
-                    searchedfee.map((f)=>(
-                      <tr>
+                    searchedfee.map((f) => (
+                      <tr key={f._id}>
                         <td>{f.RegNo}</td>
-                      <td>{f.FeeType}</td>
-                      <td>{f.PaymentType}({f?.FeeMonth})</td>
-                      <td>{f.paidAmount}</td>
-                      <td>{f.Amount-f.paidAmount}</td>
+                        <td>{f.FeeType}</td>
+                        <td>{f.PaymentType}({f?.FeeMonth})</td>
+                        <td>{f.paidAmount}</td>
+                        <td>{f.Amount - f.paidAmount}</td>
+                        <td>{(f.Amount - f.paidAmount === 0) ? "No Dues" : <button onClick={() => handleSetPay(f)}>Pay</button>}</td>
                       </tr>
                     ))
                   }
@@ -242,16 +269,12 @@ const Fee = () => {
 
             </div>
 
-            <form
-              className="collect-fee-payment-section"
-              
-            >
+            
               <h3 className="collect-fee-section-title">
                 Fee Details
               </h3>
 
               <div className="collect-fee-payment-grid">
-
                 <div className="collect-fee-field">
                   <label htmlFor="collect-fee-due">
                     Total Fee (₹)
@@ -262,16 +285,29 @@ const Fee = () => {
                     min="0"
                     step="0.01"
                     placeholder="Enter due fee"
-                    value={dueFee}
-                    
+                    value={duePay?.Amount}
                     required
+                    disabled
+                  />
+                </div>
+                <div className="collect-fee-field">
+                  <label htmlFor="collect-fee-paid">
+                    Fee Type
+                  </label>
+                  <input
+                    id="collect-fee-paid"
+                    type="text"
+                    min="0.01"
+                    step="0.01"
+                    placeholder="Enter amount to collect"
+                    value={duePay?.PaymentType}
                     disabled
                   />
                 </div>
 
                 <div className="collect-fee-field">
                   <label htmlFor="collect-fee-paid">
-                    Collect Amount (₹)
+                    Paid Amount (₹)
                   </label>
                   <input
                     id="collect-fee-paid"
@@ -279,11 +315,25 @@ const Fee = () => {
                     min="0.01"
                     step="0.01"
                     placeholder="Enter amount to collect"
-                    value={paidAmount}
-                    onChange={(e) => setPaidAmount(e.target.value)}
-                    required
+                    value={duePay?.paidAmount}
+                    disabled
                   />
                 </div>
+                <div className="collect-fee-field">
+                  <label htmlFor="collect-fee-paid">
+                    Due Amount (₹)
+                  </label>
+                  <input
+                    id="collect-fee-paid"
+                    type='text'
+                    placeholder="Enter amount to collecfhjt"
+                    value={duePay?.Amount - duePay?.paidAmount}
+                    onChange={(e)=>setDueFee(e.target.value)}
+                    required
+
+                  />
+                </div>
+
 
                 <div className="collect-fee-field collect-fee-field-full">
                   <label htmlFor="collect-fee-remark">
@@ -293,8 +343,7 @@ const Fee = () => {
                     id="collect-fee-remark"
                     rows="3"
                     placeholder="Enter payment remark..."
-                    value={remark}
-                    onChange={(e) => setRemark(e.target.value)}
+
                   />
                 </div>
 
@@ -304,24 +353,20 @@ const Fee = () => {
                 <div className="collect-fee-due-summary">
                   <span>Remaining Due</span>
                   <strong>
-                    ₹
-                    {(
-                      Number(dueFee) || 0
-                    ).toLocaleString('en-IN', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2
-                    })}
+                    ₹00
+
                   </strong>
                 </div>
 
                 <button
                   className="collect-fee-submit-button"
                   type="submit"
+                  onClick={collectfee}
                 >
                   Collect Fee
                 </button>
               </div>
-            </form>
+            
 
           </div>
         )}
