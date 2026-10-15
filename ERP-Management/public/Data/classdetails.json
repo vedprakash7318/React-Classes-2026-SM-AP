@@ -5,31 +5,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Anjali"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Rahul"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Priya"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "EVS",
-        "Teacher": "Mr. Amit"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Drawing",
-        "Teacher": "Mrs. Neha"
+        "Teacher": "Neha Gupta",
+        "TeacherPhone": "9876543213"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Rohit"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Pooja"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -56,31 +63,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Kavita"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Suresh"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Ritu"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "EVS",
-        "Teacher": "Mr. Deepak"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Drawing",
-        "Teacher": "Mrs. Simran"
+        "Teacher": "Neha Gupta",
+        "TeacherPhone": "9876543213"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Vikas"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Meena"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -107,31 +121,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Sunita"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Manish"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Shweta"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "EVS",
-        "Teacher": "Mr. Arjun"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Drawing",
-        "Teacher": "Mrs. Komal"
+        "Teacher": "Neha Gupta",
+        "TeacherPhone": "9876543213"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Nitin"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Asha"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -158,31 +179,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Rekha"
+        "Teacher": "Neha Gupta",
+        "TeacherPhone": "9876543213"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Mohit"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Poonam"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "EVS",
-        "Teacher": "Mr. Karan"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Drawing",
-        "Teacher": "Mrs. Jyoti"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Ajay"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Nisha"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       }
     ],
     "fee": [
@@ -209,31 +237,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Shalini"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Varun"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Seema"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Naveen"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Rachna"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Akash"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Tanya"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -260,31 +295,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Priyanka"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Sachin"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Mamta"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Raj"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Swati"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Vivek"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Alka"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -311,31 +353,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Deepa"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Ashish"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Sonam"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Tarun"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Vandana"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Gaurav"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Shikha"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -362,31 +411,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Meera"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Yash"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Neelam"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Hemant"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Garima"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Ankit"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Preeti"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -413,31 +469,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Sangeeta"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Lokesh"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Archana"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Prakash"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Bhavna"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Sameer"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Renu"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -464,31 +527,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Shilpa"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Dev"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Kiran"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Rakesh"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Charu"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Sumit"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Payal"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -515,31 +585,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Shilpa"
+        "Teacher": "Rahul Sharma",
+        "TeacherPhone": "9876543210"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Dev"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Kiran"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Rakesh"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Charu"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Sumit"
+        "Teacher": "Ankit Mishra",
+        "TeacherPhone": "9876543214"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Payal"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [
@@ -566,31 +643,38 @@
     "Subjects": [
       {
         "Subject": "English",
-        "Teacher": "Mrs. Shilpa"
+        "Teacher": "Anjali Srivastava",
+        "TeacherPhone": "9876543219"
       },
       {
         "Subject": "Maths",
-        "Teacher": "Mr. Dev"
+        "Teacher": "Manish Kumar",
+        "TeacherPhone": "9876543218"
       },
       {
         "Subject": "Hindi",
-        "Teacher": "Mrs. Kiran"
+        "Teacher": "Priya Singh",
+        "TeacherPhone": "9876543211"
       },
       {
         "Subject": "Science",
-        "Teacher": "Mr. Rakesh"
+        "Teacher": "Amit Verma",
+        "TeacherPhone": "9876543212"
       },
       {
         "Subject": "Social Studies",
-        "Teacher": "Mrs. Charu"
+        "Teacher": "Shweta Singh",
+        "TeacherPhone": "9876543217"
       },
       {
         "Subject": "Computer",
-        "Teacher": "Mr. Sumit"
+        "Teacher": "Vikas Tiwari",
+        "TeacherPhone": "9876543216"
       },
       {
         "Subject": "GK",
-        "Teacher": "Mrs. Payal"
+        "Teacher": "Pooja Yadav",
+        "TeacherPhone": "9876543215"
       }
     ],
     "fee": [

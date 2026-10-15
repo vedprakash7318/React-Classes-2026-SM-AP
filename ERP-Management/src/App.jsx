@@ -10,6 +10,7 @@ import Registration from './AdminPages/Registration'
 import AdminSettings from './AdminPages/AdminSettings'
 import AllClasses from './AdminPages/AllClasses'
 import Students from './AdminPages/Students'
+import TeacherClasses from './TeacherPages/TeacherClasses'
 
 
 
@@ -40,6 +41,16 @@ const App = () => {
           <Route path='/admin-settings' element={<AdminSettings />} />
 
       {/* Admin Routes  end*/}
+
+
+
+    {/* Teacher Route start */}
+
+        <Route path='/myclass' element={<TeacherClasses/>}/>
+
+
+
+    {/* Teacher Route end */}
 
 
         </Routes>

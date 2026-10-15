@@ -10,8 +10,9 @@ import { SiGoogleclassroom } from "react-icons/si";
 import { IoSettings } from "react-icons/io5";
 import { RiAdminFill } from "react-icons/ri";
 import { VscAccount } from "react-icons/vsc";
+import Swal from 'sweetalert2';
 
-const DashboardLayout = ({children}) => {
+const DashboardLayout = ({ children }) => {
 
   const [role, setRole] = useState('')
   const [isClose, setIsClose] = useState(false)
@@ -23,8 +24,8 @@ const DashboardLayout = ({children}) => {
 
   useEffect(() => {
     setRole(localStorage.getItem('role') ?? "Guest")
-  },[])
-  
+  }, [])
+
 
   const tabs = {
     supperAdmin: [
@@ -54,11 +55,37 @@ const DashboardLayout = ({children}) => {
   const roleTabs = tabs[role] || [];
 
 
-const handleLogout = ()=>{
-  localStorage.removeItem('token')
-  localStorage.removeItem('role')
-  navigate('/login')
-}
+  const handleLogout = () => {
+    Swal.fire({
+      title: "Are you sure to Logout?",
+      text: "You will be logout from your dashboard!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Logout!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Logout!",
+          text: "Logout Successfully.",
+          icon: "success"
+        })
+        localStorage.removeItem('token')
+        localStorage.removeItem('role')
+        navigate('/login')
+      }else{
+        Swal.fire({
+          title: "Cancelled",
+          text: "You are still logged in!",
+          icon: "info"
+        })
+      }
+    });
+
+
+
+  }
 
 
   return (
@@ -81,7 +108,7 @@ const handleLogout = ()=>{
                     `navlinks ${isActive ? "sidebar-active" : ""}`
                   }
                 >
-                  <Icon/>
+                  <Icon />
 
                   {!isClose && (
                     <span>{tab.title}</span>
@@ -102,7 +129,7 @@ const handleLogout = ()=>{
             <h1>Welcome Back! {role} </h1>
           </div>
           <div className="dashboardLayout-content">
-              {children}
+            {children}
           </div>
         </div>
       </div>

@@ -1,19 +1,116 @@
 [
-    {
-    "id":1,
-    "name":"Ved Prakash",
-    "email":"ved@gmail.com",
-    "otp":"1234",
-    "role":"supperAdmin",
-    "token":"asdfghjklqwertyui1234567@#$%^&*"
-    },
-    {
-    "id":2,
-    "name":"Satya Prakash",
-    "email":"s@gmail.com",
-    "otp":"5678",
-    "role":"admin",
-    "token":"asdfghjklqwertyndgvfjyevcjsrfgsh54678dschjvsdcv6ui@#$%^&*"
-
-    }
+  {
+    "id": 1,
+    "name": "Ved Prakash",
+    "email": "ved@gmail.com",
+    "otp": "1234",
+    "role": "superAdmin",
+    "token": "asdfghjklqwertyui1234567@#$%^&*"
+  },
+  {
+    "id": 2,
+    "name": "Satya Prakash",
+    "email": "s@gmail.com",
+    "otp": "5678",
+    "role": "admin",
+    "token": "asdfghjklqwertyndgvfjyevcjsrfgsh54678dschjvsdcv6ui@#$%^&*"
+  },
+  {
+    "id": 3,
+    "name": "Master Ji",
+    "email": "m@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "asdfghjklqwertyndgweefkjvs32u7secngvndbnsdfgh78dschjvsdcv6ui@#$%^&*"
+  },
+  {
+    "id": 4,
+    "name": "Rahul Sharma",
+    "mobile": "9876543210",
+    "email": "rahul@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "asdfghjklqwertyndgvfjyevcjsrfgsh54678dsfdmhchjvsdcv6ui@#$%^&*"
+  },
+  {
+    "id": 5,
+    "name": "Priya Singh",
+    "mobile": "9876543211",
+    "email": "priya@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "priyaTeacherToken123"
+  },
+  {
+    "id": 6,
+    "name": "Amit Verma",
+    "mobile": "9876543212",
+    "email": "amit@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "amitTeacherToken123"
+  },
+  {
+    "id": 7,
+    "name": "Neha Gupta",
+    "mobile": "9876543213",
+    "email": "neha@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "nehaTeacherToken123"
+  },
+  {
+    "id": 8,
+    "name": "Ankit Mishra",
+    "mobile": "9876543214",
+    "email": "ankit@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "ankitTeacherToken123"
+  },
+  {
+    "id": 9,
+    "name": "Pooja Yadav",
+    "mobile": "9876543215",
+    "email": "pooja@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "poojaTeacherToken123"
+  },
+  {
+    "id": 10,
+    "name": "Vikas Tiwari",
+    "mobile": "9876543216",
+    "email": "vikas@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "vikasTeacherToken123"
+  },
+  {
+    "id": 11,
+    "name": "Shweta Singh",
+    "mobile": "9876543217",
+    "email": "shweta@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "shwetaTeacherToken123"
+  },
+  {
+    "id": 12,
+    "name": "Manish Kumar",
+    "mobile": "9876543218",
+    "email": "manish@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "manishTeacherToken123"
+  },
+  {
+    "id": 13,
+    "name": "Anjali Srivastava",
+    "mobile": "9876543219",
+    "email": "anjali@gmail.com",
+    "otp": "0000",
+    "role": "teacher",
+    "token": "anjaliTeacherToken123"
+  }
 ]
